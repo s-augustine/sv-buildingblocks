@@ -5,3 +5,4 @@ Modules:
 1, Mux
 2, Register
 3, Synchronizer
+4, RAM Model

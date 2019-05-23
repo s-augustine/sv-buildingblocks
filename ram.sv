@@ -10,12 +10,12 @@ module ram (
 logic [1023:0] [31:0] ram;
 logic [31:0] ram_out;
 
-always_ff (@posedge clk ) begin 
+always_ff @(posedge clk ) begin 
   if (!cs_n && !we_n)
     q[addr] <= din;
 end
 
-always_ff (@posedge clk ) begin 
+always_ff @(posedge clk ) begin 
   if (!cs_n && we_n)
     ram_out <= q[addr] ;
 end

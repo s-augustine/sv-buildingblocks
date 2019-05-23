@@ -2,9 +2,9 @@ module mux (
   input logic a,
   input logic b,
   input logic sel,
-  output o
+  output wire o
   );
 
-always_comb o = sel ? b : a;
+assign o = sel ? b : a;
 
 endmodule

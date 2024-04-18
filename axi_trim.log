@@ -1,0 +1,38 @@
+make -j -C obj_dir -f Vtb.mk Vtb__ALL.a
+make[1]: Entering directory '/home/suraja/repo/sv-buildingblocks/obj_dir'
+make[1]: 'Vtb__ALL.a' is up to date.
+make[1]: Leaving directory '/home/suraja/repo/sv-buildingblocks/obj_dir'
+make -j -C obj_dir -f Vtb.mk ../sc_main.o verilated.o
+make[1]: Entering directory '/home/suraja/repo/sv-buildingblocks/obj_dir'
+make[1]: '../sc_main.o' is up to date.
+make[1]: 'verilated.o' is up to date.
+make[1]: Leaving directory '/home/suraja/repo/sv-buildingblocks/obj_dir'
+cd obj_dir/ && g++ ../sc_main.o Vtb__ALL.a verilated.o -o Vtb -lsystemc
+obj_dir/Vtb 
+
+Info: (I804) /IEEE_Std_1666/deprecated: 
+    sc_clock(const char*, double, double, double, bool)
+    is deprecated use a form that includes sc_time or
+    sc_time_unit
+clk00000000:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000001:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000002:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000003:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000004:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000005:: tvalid_out = 1; tdata_out= bbbbaaaaaaaaaaaa; tkeep_out= ff; tlast_out = 0
+clk00000006:: tvalid_out = 1; tdata_out= 0000bbbbbbbbbbbb; tkeep_out= 3f; tlast_out = 1
+clk00000007:: tvalid_out = 1; tdata_out= ddddcccccccccccc; tkeep_out= ff; tlast_out = 0
+clk00000008:: tvalid_out = 1; tdata_out= 0000dddddddddddd; tkeep_out= 3f; tlast_out = 1
+clk00000009:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk0000000a:: tvalid_out = 1; tdata_out= bbbbaaaaaaaaaaaa; tkeep_out= ff; tlast_out = 0
+clk0000000b:: tvalid_out = 1; tdata_out= 0000bbbbbbbbbbbb; tkeep_out= 3f; tlast_out = 1
+clk0000000c:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk0000000d:: tvalid_out = 1; tdata_out= ddddcccccccccccc; tkeep_out= ff; tlast_out = 0
+clk0000000e:: tvalid_out = 1; tdata_out= 0000dddddddddddd; tkeep_out= 3f; tlast_out = 1
+clk0000000f:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000010:: tvalid_out = 1; tdata_out= bbaadddddddddddd; tkeep_out= ff; tlast_out = 1
+clk00000011:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000012:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000013:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+clk00000014:: tvalid_out = 0; tdata_out= 0000000000000000; tkeep_out= 00; tlast_out = 0
+- axi_trim_tb.sv:143: Verilog $finish
